@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="8dp"
+    app:cardCornerRadius="10dp"
+    android:layout_width="300dp"
+    android:layout_height="190dp"
+    android:fontFamily="@font/nanum"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="@color/black">
+    <RelativeLayout
+        android:paddingTop="8dp"
+        android:gravity="center"
+        android:background="@color/red"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/favor_ic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/playlistadd"
+            android:layout_toRightOf="@+id/playlistadd"
+            android:src="@drawable/ic_favorite1" />
+        <TextView
+            android:onClick="clickaddplaylist"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="재생목록 추가"
+            android:layout_width="86dp"
+            android:layout_height="32dp"
+            android:id="@+id/playlistadd" />
+
+        <TextView
+            android:onClick="clicksns"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:id="@+id/shared"
+            android:layout_width="86dp"
+            android:layout_height="32dp"
+            android:layout_alignLeft="@+id/playlistadd"
+            android:layout_alignStart="@+id/playlistadd"
+            android:layout_below="@+id/playlistadd"
+            android:text="트위터 공유"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/shared_ic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/favor_ic"
+            android:layout_toEndOf="@+id/shared"
+            android:layout_toRightOf="@+id/shared"
+            android:src="@drawable/ic_tw" />
+
+        <TextView
+            android:onClick="clickinfo"
+            android:id="@+id/songinfo"
+            android:layout_width="86dp"
+            android:layout_height="32dp"
+            android:layout_alignLeft="@+id/shared"
+            android:layout_alignStart="@+id/shared"
+            android:layout_below="@+id/shared"
+            android:gravity="center"
+            android:text="곡 정보"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/songinfo_ic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shared"
+            android:layout_toEndOf="@+id/songinfo"
+            android:layout_toRightOf="@+id/songinfo"
+            android:src="@drawable/ic_songinfo" />
+
+        <TextView
+            android:onClick="clickdel"
+            android:gravity="center"
+            android:layout_width="86dp"
+            android:layout_height="32dp"
+            android:layout_alignLeft="@+id/songinfo"
+            android:layout_alignStart="@+id/songinfo"
+            android:layout_below="@+id/songinfo"
+            android:text="삭제"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/del" />
+
+        <ImageView
+            android:id="@+id/del_ic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/songinfo_ic"
+            android:layout_toRightOf="@+id/del"
+            android:src="@drawable/ic_remove" />
+
+        <TextView
+            android:onClick="clickcancel"
+            android:gravity="center"
+            android:id="@+id/cancle_tv"
+            android:layout_width="86dp"
+            android:layout_height="32dp"
+            android:layout_alignLeft="@+id/del"
+            android:layout_alignStart="@+id/del"
+            android:layout_below="@+id/del"
+            android:text="취소"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+        <ImageView
+            android:layout_toRightOf="@+id/cancle_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/del_ic"
+            android:src="@drawable/ic_can"/>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

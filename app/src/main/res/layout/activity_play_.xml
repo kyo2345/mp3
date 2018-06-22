@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:gravity="center"
+    android:paddingTop="10dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/p_album"
+        android:layout_marginBottom="8dp"
+        android:background="@color/white"
+        android:layout_width="300dp"
+        android:layout_height="300dp" />
+</LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <SeekBar
+            android:thumb="@drawable/seekbar_thumb"
+            android:progressDrawable="@drawable/seekbar"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/p_seekBar" />
+        <TextView
+            android:layout_marginTop="8dp"
+            android:id="@+id/starttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/p_seekBar"
+            android:layout_alignStart="@+id/p_seekBar"
+            android:layout_below="@+id/p_seekBar"
+            android:text="00:00"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/p_seekBar"
+            android:layout_alignRight="@+id/p_seekBar"
+            android:layout_below="@+id/p_seekBar"
+            android:text="00:00"
+            android:textColor="@color/white"
+            android:id="@+id/endtime" />
+
+        <TextView
+
+            android:id="@+id/songtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/starttime"
+            android:layout_centerHorizontal="true"
+            android:text="노래 제목"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <TextView
+            android:gravity="center"
+            android:textSize="15sp"
+            android:id="@+id/songartist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/songtitle"
+            android:layout_centerHorizontal="true"
+            android:text="아티스트"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/songartist"
+            android:layout_alignStart="@+id/songartist"
+            android:layout_below="@+id/songartist"
+            android:text="앨범 이름"
+            android:textColor="@color/white"
+            android:id="@+id/albumtitle" />
+
+        <ImageView
+            android:layout_marginBottom="16dp"
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/starttime"
+            android:layout_alignStart="@+id/starttime"
+            android:layout_below="@+id/albumtitle"
+            android:src="@drawable/ic_back" />
+
+        <ImageView
+            android:layout_marginBottom="16dp"
+            android:id="@+id/play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/albumtitle"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_play" />
+
+        <ImageView
+            android:layout_marginBottom="16dp"
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/endtime"
+            android:layout_alignRight="@+id/endtime"
+            android:layout_below="@+id/albumtitle"
+            android:src="@drawable/ic_next" />
+
+        <ImageView
+            android:id="@+id/volume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/back"
+            android:layout_toLeftOf="@+id/back"
+            android:layout_toStartOf="@+id/back"
+            android:src="@drawable/ic_volume_up" />
+        <SeekBar
+            android:thumb="@drawable/seekbar_thumb"
+            android:progressDrawable="@drawable/seekbar"
+            android:id="@+id/seekBar2"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/back"
+            android:layout_alignStart="@+id/back"
+            android:layout_below="@+id/back" />
+
+        <ImageView
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/volume"
+            android:layout_toEndOf="@+id/volume"
+            android:layout_toRightOf="@+id/volume"
+            android:src="@drawable/ic_playlist"
+            android:id="@+id/songlist" />
+
+        <ImageView
+            android:layout_marginTop="16dp"
+            android:id="@+id/more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seekBar2"
+            android:src="@drawable/ic_more"
+            android:layout_alignRight="@+id/p_seekBar" />
+    </RelativeLayout>
+</LinearLayout>

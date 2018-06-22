@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:title="이름 순" android:id="@+id/s_name"></item>
+<item android:title="아티스트" android:id="@+id/s_artist"></item>
+<item android:title="추가 날짜순" android:id="@+id/s_date"></item>
+</menu>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:padding="3dp"
+    android:background="@color/black">
+<ImageView
+    android:background="@color/white"
+    android:src="@drawable/img05"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:id="@+id/m_titleimg" />
+
+    <TextView
+        android:id="@+id/m_title"
+        android:layout_width="200dp"
+        android:layout_height="46dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/m_titleimg"
+        android:layout_toRightOf="@+id/m_titleimg"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:paddingLeft="8dp"
+        android:text="곡명"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:textSize="12dp"
+        android:textColor="@color/white"
+        android:id="@+id/m_du"
+        android:layout_marginRight="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/m_title"
+        android:layout_alignParentRight="true"
+        android:text="00:00" />
+
+    <TextView
+        android:paddingLeft="8dp"
+        android:id="@+id/m_artist"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_below="@+id/m_title"
+        android:layout_toRightOf="@+id/m_titleimg"
+        android:text="가수 명"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:textStyle="bold" />
+    <View
+        android:layout_marginLeft="80dp"
+        android:background="@color/white"
+        android:layout_below="@+id/m_artist"
+        android:id="@+id/m_v"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</RelativeLayout>

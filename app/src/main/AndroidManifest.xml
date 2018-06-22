@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.oh.mp3test">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".mp3Application"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Ohmusic"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Play_Activity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".MediaPlayerService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="REWIND" />
+                <action android:name="TOGGLE_PLAY" />
+                <action android:name="FORWARD" />
+                <action android:name="CLOSE" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".Playlist_Activity" />
+        <activity
+            android:name=".Dialog_Activity"
+            android:theme="@style/AppTheme.NoActionBar2" />
+        <activity android:name=".Musicinfo_Activity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:layout_height="64dp">
+    <ImageView
+    android:id="@+id/notifi_albumart"
+    android:layout_marginLeft="4dp"
+    android:scaleType="fitXY"
+    android:src="@drawable/musicicon"
+    android:layout_width="40dp"
+    android:layout_height="40dp" />
+
+    <LinearLayout
+        android:layout_width="154dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/noti_title"
+            android:layout_width="154dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:text="Title"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/noti_artist"
+            android:textSize="13dp"
+            android:layout_width="154dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:text="artist"
+            android:textColor="@color/white" />
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/noti_back"
+        android:background="?attr/selectableItemBackground"
+        android:src="@drawable/ic_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+    <ImageButton
+        android:id="@+id/noti_play"
+        android:background="?attr/selectableItemBackground"
+        android:src="@drawable/ic_play"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+    <ImageButton
+        android:id="@+id/noti_next"
+        android:background="?attr/selectableItemBackground"
+        android:src="@drawable/ic_next"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+    <ImageButton
+        android:id="@+id/noti_close"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="?attr/selectableItemBackground"
+        android:src="@drawable/ic_close" />
+</LinearLayout>

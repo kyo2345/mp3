@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".Musicinfo_Activity">
+<LinearLayout
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/info_albumart"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+</LinearLayout>
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:padding="10dp"
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <TextView
+               android:textColor="@color/white"
+               android:layout_marginLeft="8dp"
+               android:textStyle="bold"
+               android:textSize="16dp"
+               android:text="제목"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+           <TextView
+               android:textColor="@color/white"
+               android:layout_marginLeft="8dp"
+               android:id="@+id/info_title"
+               android:textSize="14dp"
+               android:textStyle="bold"
+               android:text="출력받을 제목"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+           <View
+               android:layout_margin="8dp"
+               android:background="@color/white"
+               android:layout_width="match_parent"
+               android:layout_height="1dp"/>
+
+           <TextView
+               android:textColor="@color/white"
+               android:layout_marginLeft="8dp"
+               android:textStyle="bold"
+               android:textSize="16dp"
+               android:text="아티스트"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+           <TextView
+               android:textColor="@color/white"
+               android:layout_marginLeft="8dp"
+               android:id="@+id/info_artist"
+               android:textSize="14dp"
+               android:textStyle="bold"
+               android:text="출력받을 아티스트"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+           <View
+               android:layout_margin="8dp"
+               android:background="@color/white"
+               android:layout_width="match_parent"
+               android:layout_height="1dp"/>
+
+           <TextView
+               android:textColor="@color/white"
+               android:layout_marginLeft="8dp"
+               android:textStyle="bold"
+               android:textSize="16dp"
+               android:text="앨범"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+           <TextView
+               android:textColor="@color/white"
+               android:layout_marginLeft="8dp"
+               android:id="@+id/info_album"
+               android:textSize="14dp"
+               android:textStyle="bold"
+               android:text="출력받을 앨범"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+           <View
+               android:layout_margin="8dp"
+               android:background="@color/white"
+               android:layout_width="match_parent"
+               android:layout_height="1dp"/>
+
+           <TextView
+               android:textColor="@color/white"
+               android:layout_marginLeft="8dp"
+               android:textStyle="bold"
+               android:textSize="16dp"
+               android:text="재생 시간"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+           <TextView
+               android:textColor="@color/white"
+               android:layout_marginLeft="8dp"
+               android:id="@+id/info_Du"
+               android:textSize="14dp"
+               android:textStyle="bold"
+               android:text="출력받을 재생시간"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+           <View
+               android:layout_margin="8dp"
+               android:background="@color/white"
+               android:layout_width="match_parent"
+               android:layout_height="1dp"/>
+
+           <TextView
+               android:textColor="@color/white"
+               android:layout_marginLeft="8dp"
+               android:textStyle="bold"
+               android:textSize="16dp"
+               android:text="장르"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+           <TextView
+               android:textColor="@color/white"
+               android:layout_marginLeft="8dp"
+               android:id="@+id/info_genre"
+               android:textSize="14dp"
+               android:textStyle="bold"
+               android:text="출력받을 장르"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+           <View
+               android:layout_margin="8dp"
+               android:background="@color/white"
+               android:layout_width="match_parent"
+               android:layout_height="1dp"/>
+
+           <TextView
+               android:textColor="@color/white"
+               android:layout_marginLeft="8dp"
+               android:textStyle="bold"
+               android:textSize="16dp"
+               android:text="만든 날짜"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+           <TextView
+               android:textColor="@color/white"
+               android:layout_marginLeft="8dp"
+               android:id="@+id/info_Date"
+               android:textSize="14dp"
+               android:textStyle="bold"
+               android:text="출력받을 만든날짜"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+           <View
+               android:layout_margin="8dp"
+               android:background="@color/white"
+               android:layout_width="match_parent"
+               android:layout_height="1dp"/>
+
+           <TextView
+               android:textColor="@color/white"
+               android:layout_marginLeft="8dp"
+               android:textStyle="bold"
+               android:textSize="16dp"
+               android:text="곡 번호"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+           <TextView
+               android:textColor="@color/white"
+               android:layout_marginLeft="8dp"
+               android:id="@+id/info_songnum"
+               android:textSize="14dp"
+               android:textStyle="bold"
+               android:text="출력받을 곡번호"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+           <View
+               android:layout_margin="8dp"
+               android:background="@color/white"
+               android:layout_width="match_parent"
+               android:layout_height="1dp"/>
+
+           <TextView
+               android:textColor="@color/white"
+               android:layout_marginLeft="8dp"
+               android:textStyle="bold"
+               android:textSize="16dp"
+               android:text="형식"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+           <TextView
+               android:textColor="@color/white"
+               android:layout_marginLeft="8dp"
+               android:id="@+id/info_type"
+               android:textSize="14dp"
+               android:textStyle="bold"
+               android:text="출력받을 형식"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+           <View
+               android:layout_margin="8dp"
+               android:background="@color/white"
+               android:layout_width="match_parent"
+               android:layout_height="1dp"/>
+
+           <TextView
+               android:textColor="@color/white"
+               android:layout_marginLeft="8dp"
+               android:textStyle="bold"
+               android:textSize="16dp"
+               android:text="비트 심도"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+           <TextView
+               android:textColor="@color/white"
+               android:layout_marginLeft="8dp"
+               android:id="@+id/info_bit"
+               android:textSize="14dp"
+               android:textStyle="bold"
+               android:text="출력받을 비트"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+           <View
+               android:layout_margin="8dp"
+               android:background="@color/white"
+               android:layout_width="match_parent"
+               android:layout_height="1dp"/>
+
+
+
+           <TextView
+               android:textColor="@color/white"
+               android:layout_marginLeft="8dp"
+               android:textStyle="bold"
+               android:textSize="16dp"
+               android:text="경로"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+           <TextView
+               android:textColor="@color/white"
+               android:layout_marginLeft="8dp"
+               android:id="@+id/info_route"
+               android:textSize="14dp"
+               android:textStyle="bold"
+               android:text="출력받을 경로"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+           <View
+               android:layout_margin="8dp"
+               android:background="@color/white"
+               android:layout_width="match_parent"
+               android:layout_height="1dp"/>
+       </LinearLayout>
+   </ScrollView>
+</LinearLayout>
